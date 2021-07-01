@@ -16,7 +16,7 @@ public class Study101 {
     Solution S1=new Solution();
 		int number=75257;
     String[] strs = {"111flower","gggflow","flight"};
-    System.out.println("balls!");
+    System.out.println("test_num1!");
 
     
 	// System.out.println("the reverse number of "+number+" is:"+S1.reverse(number)); // print reversed number.
