@@ -18,6 +18,8 @@ public class Study101 {
     String[] strs = {"111flower","gggflow","flight"};
     System.out.println("test_num1!");
     System.out.println("test_num2!");
+    System.out.println("this is from Windows 10 pc !");
+
 
     
 	// System.out.println("the reverse number of "+number+" is:"+S1.reverse(number)); // print reversed number.
