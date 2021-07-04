@@ -20,6 +20,8 @@ public class Study101 {
     System.out.println("test_num2!");
     System.out.println("this is from Windows 10 pc !");
     System.out.println("this is from Ubonto 21.04  !");
+    System.out.println("this is from Ubonto 21.04 from 04/07/21 19:36  !!");
+
 
 
     
