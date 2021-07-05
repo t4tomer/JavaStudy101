@@ -1,9 +1,13 @@
 
 import java.lang.Math;
 
+import jdk.javadoc.internal.tool.resources.javadoc;
+import java.util.*;
 
 
 public class Solution {
+
+
 //the question : https://leetcode.com/problems/reverse-integer/solution/
     public int reverse(int x) { // this method is used to print the revrse digits of int x 
         int rev = 0;
@@ -47,9 +51,9 @@ public class Solution {
     
 
     }
-
+// the question : https://leetcode.com/problems/palindrome-number/solution/
     public boolean isPalindrome(int x) {
-    // the question : https://leetcode.com/problems/palindrome-number/solution/
+
 
          int  original_number=x;
         
@@ -78,6 +82,62 @@ public class Solution {
         return "cool";
         
     }
+
+
+
+// question: https://leetcode.com/problems/valid-parentheses/
+// solution: https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
+
+       // function to check if brackets are balanced
+       static boolean areBracketsBalanced(String expr)
+       {
+           // Using ArrayDeque is faster than using Stack class
+           Deque<Character> stack
+               = new ArrayDeque<Character>();
+    
+           // Traversing the Expression
+           for (int i = 0; i < expr.length(); i++)
+           {
+               char x = expr.charAt(i);
+    
+               if (x == '(' || x == '[' || x == '{')
+               {
+                   // Push the element in the stack
+                   stack.push(x);
+                   continue;
+               }
+    
+               // If current character is not opening
+               // bracket, then it must be closing. So stack
+               // cannot be empty at this point.
+               if (stack.isEmpty())
+                   return false;
+               char check;
+               switch (x) {
+               case ')':
+                   check = stack.pop();
+                   if (check == '{' || check == '[')
+                       return false;
+                   break;
+    
+               case '}':
+                   check = stack.pop();
+                   if (check == '(' || check == '[')
+                       return false;
+                   break;
+    
+               case ']':
+                   check = stack.pop();
+                   if (check == '(' || check == '{')
+                       return false;
+                   break;
+               }
+           }
+    
+           // Check Empty Stack
+           return (stack.isEmpty());
+       }
+    
 
 
 

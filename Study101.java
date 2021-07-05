@@ -32,7 +32,14 @@ public class Study101 {
  
       System.out.println(Arrays.toString(strs));
     
-        
+      String str = "{[((()))]}";
+     
+      char ch1 = str.charAt(0);
+      S1.areBracketsBalanced(str);
+      System.out.println("test :"+ S1.areBracketsBalanced(str));
+
+
+
   }
 }
 
