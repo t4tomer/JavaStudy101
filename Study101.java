@@ -14,15 +14,11 @@ public class Study101 {
   public static void main(String[] args) {
 
     Solution S1=new Solution();
+    Study_4_me S2= new Study_4_me();
+    S2.Linked_List(); // this for make linked list in java 
+
 		int number=75257;
     String[] strs = {"111flower","gggflow","flight"};
-    System.out.println("test_num1!");
-    System.out.println("test_num2!");
-    System.out.println("this is from Windows 10 pc !");
-    System.out.println("this is from Ubonto 21.04  !");
-    System.out.println("this is from Ubonto 21.04 from 04/07/21 19:36  !!");
-
-
 
     
 	// System.out.println("the reverse number of "+number+" is:"+S1.reverse(number)); // print reversed number.
@@ -33,10 +29,8 @@ public class Study101 {
       System.out.println(Arrays.toString(strs));
     
       String str = "{[((()))]}";
-     
-      char ch1 = str.charAt(0);
-      S1.areBracketsBalanced(str);
-      System.out.println("test :"+ S1.areBracketsBalanced(str));
+      int[] Array = new int[]{0,0,0,0,0,1,1,1,2,2,3,4 }; 
+      System.out.println("the value of k:"+S1.removeDuplicates(Array));
 
 
 

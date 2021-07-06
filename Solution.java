@@ -1,7 +1,7 @@
 
 import java.lang.Math;
 
-import jdk.javadoc.internal.tool.resources.javadoc;
+//import jdk.javadoc.internal.tool.resources.javadoc;
 import java.util.*;
 
 
@@ -138,6 +138,16 @@ public class Solution {
            return (stack.isEmpty());
        }
     
+
+
+     static int  removeDuplicates(int[] nums) {
+        int k=0;
+
+        for(int i = 0; i < nums.length; i++)
+            i++;
+        return k;
+        
+    }
 
 
 
